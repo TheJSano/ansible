@@ -58,7 +58,7 @@ EXAMPLES = r'''
 - name: Import ASM policy
   bigip_asm_policy_import:
     name: new_asm_policy
-    file: /root/asm_policy.xml
+    source: /root/asm_policy.xml
     provider:
       server: lb.mydomain.com
       user: admin
@@ -78,7 +78,7 @@ EXAMPLES = r'''
 - name: Override existing ASM policy
   bigip_asm_policy:
     name: new_asm_policy
-    file: /root/asm_policy_new.xml
+    source: /root/asm_policy_new.xml
     force: yes
     provider:
       server: lb.mydomain.com
